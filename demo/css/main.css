@@ -1,0 +1,55 @@
+
+/* *{
+    border: 5px dashed cadetblue;
+} */
+
+/* Selecteur par nom de balise */
+header {
+    background-color:rgb(0, 255, 13);
+    color: white;
+}
+
+/* Selecteur par id */
+#main-content{
+    border: 2px solid black;
+}
+
+/* Selecteur par class */
+.classed-link{
+    font-weight: bold;
+}
+
+/* Tous les enfants indirects ou directs */
+#section-text h3{
+    color: fuchsia;
+}
+
+/* Tous les enfants directs */
+#demo-img > img{
+    border: 3px solid goldenrod;
+}
+
+/* Le premier voisin d'un élément */
+#section-text + *{
+    background-color: orchid;
+}
+
+/* Les voisins de manière générale */
+#section-list ~ *{
+    background-color: burlywood;
+}
+
+/* Selecteur par existance d'un attribut */
+/* pareil que '*[title]'  */
+[title] {
+    border: 1px solid green;
+}
+
+[href="#text"]{
+    color: rgb(204, 202, 113);
+}
+
+/* Combiner les selecteurs */
+h2, h3, h4, h5, div > h6 + p {
+    text-decoration: underline;
+}

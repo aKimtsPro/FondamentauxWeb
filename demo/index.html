@@ -2,66 +2,113 @@
 <html lang="fr">
 <head>
     <title>Demo HTML</title>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 
-    <h1 id="demo">Demo HTML, les balises</h1>
+    
 
-    <ol>
-        <li> <a href="#text">Les balises de textes</a> </li>
-        <li> <a href="#list">Les balises de listes</a> </li>
-        <li> <a href="#link">Les balises de liens</a> </li>
-    </ol>
+    <header>
+        <h1 id="demo">Demo HTML/CSS</h1>
+    </header>
 
-    <h2 id="text"> Les balises de textes </h2>
+    <nav>   
+        <ol>
+            <li> <a href="#text" class="classed-link">Les balises de textes</a> </li>
+            <li> <a href="#list" class="classed-link">Les balises de listes</a> </li>
+            <li> <a href="#link" class="classed-link">Les balises de liens</a> </li>
+            <li> <a href="#img" class="classed-link">Les balises d"images</a> </li>
+        </ol>
+    </nav>
+
     <!-- a commenter -->
 
-    <h3> La balise &lt;p&gt;</h3>
-    <p>Bonjour je suis un paragraphe.</p>
+    <div id="main-content">
+        <section id="section-text">
+            <h2 id="text"> Les balises de textes </h2>
+            <div>
+                <div>
+                    <h3> La balise &lt;p&gt;</h3>
+                    <p>Bonjour je suis un paragraphe.</p>
+                </div>
 
-    <h3> La balise &lt;br&gt;</h3>
-    <p>Je suis un autre paragraphe.<br> Ma deuxieme ligne avec retour à la ligne.</p>
+                <div>
+                    <h3> La balise &lt;br&gt;</h3>
+                    <p>Je suis un autre paragraphe.<br> Ma deuxieme ligne avec retour à la ligne.</p>
+                </div>
 
-    <h3>Les balises de mise en valeur:</h3>
-    <p> <strong>Lorem ipsum dolor,</strong> sit amet consectetur adipisicing elit. <em>Ad qui nam natus nisi</em> pariatur ducimus at eligendi quisquam ullam quidem magnam sunt nemo, cumque voluptatum magni tempore nobis iste omnis alias aspernatur, accusamus odit dignissimos vitae. <mark>Cumque impedit commodi incidunt.</mark> </p>
+                <div>
+                    <h3>Les balises de mise en valeur:</h3>
+                    <p> <strong>Lorem ipsum dolor,</strong> sit amet consectetur adipisicing elit. <em>Ad qui nam natus nisi</em> pariatur ducimus at eligendi quisquam ullam quidem magnam sunt nemo, cumque voluptatum magni tempore nobis iste omnis alias aspernatur, accusamus odit dignissimos vitae. <mark>Cumque impedit commodi incidunt.</mark> </p>
+                </div>
+            </div>
+        </section>
 
-    <h2 id="list">Les balises de listes</h2>
+        <section id="section-list">
+            <h2 id="list">Les balises de listes</h2>
+            <div id="list-container" class="demo-container">
+                <div>
+                    <h3>Les listes non-ordonnées (Unordered List) : </h3>
+                    <ul>
+                        <li>Listes non ordonnées</li>
+                        <li>Listes ordonnées</li>
+                        <li>Listes de définitions</li>
+                    </ul>
+                </div>
 
-    <h3>Les listes non-ordonnées (Unordered List) : </h3>
+                <div>
+                    <h3>Les listes ordonnées (Ordered List) : </h3>
+                    <ol>
+                        <li>Premier élément</li>
+                        <li>Deuxième élément</li>
+                        <li>Troisième élément</li>
+                    </ol>
+                </div>
 
-    <ul>
-        <li>Listes non ordonnées</li>
-        <li>Listes ordonnées</li>
-        <li>Listes de définitions</li>
-    </ul>
+                <div>
+                    <h3>Les listes de définitions (Definition List) : </h3>
+                    <dl>
+                        <dt>Premier titre</dt>
+                        <dd>définition du premier titre</dd>
+                        <dt>Second titre</dt>
+                        <dd>définition du second titre</dd>
+                        <dt>Troisième titre</dt>
+                        <dd>définition du troisième titre</dd>
+                    </dl>
+                </div>
 
-    <h3>Les listes ordonnées (Ordered List) : </h3>
+                
+            </div>
+        </section>
 
-    <ol>
-        <li>Premier élément</li>
-        <li>Deuxième élément</li>
-        <li>Troisième élément</li>
-    </ol>
+        <section id="section-link">
+            <h2 id="link">Les liens</h2>
+            <div>
+                <a href="http://google.com">vers google</a><br>
+                <a href="http://google.com" target="_blank">vers google dans un nouvel onglet</a><br>
+                <a href="dossier/navigation.html">vers une autre partie du site <span class="en-parathesse">(navigation)</span></a><br>
+                <a href="#demo" title="lien vers le de la page">home <span class="en-parathese">(avec title)</span></a><br>
+                <a href="ressources/Html & CSS (Bstorm).pdf" title="Html & CSS (Bstorm).pdf">lien vers pdf</a><br>
+                <a href="ressources/toDownload.rar" title="toDownload.rar">telechargement</a>
+            </div>
+        </section>
 
-    <h3>Les listes de définitions (Definition List) : </h3>
+        <section id="section-img">
+            <h2 id="img">Les images</h2>
+            <div id="demo-img">
+                <figure>
+                    <img src="../ressources/img/pexels-kira-schwarz-6898885.jpg" alt="photo d'un beau chien" title="photo d'un beau chien">
+                    <figcaption>Ceci est la photo d'un beau chien</figcaption>
+                </figure>
+                <img src="foireux" alt="photo d'un beau chien">
+                <!-- <img src="https://images.pexels.com/photos/6898885/pexels-photo-6898885.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt=""> -->
+            </div>
+        </section>
+    </div>  
 
-    <dl>
-        <dt>Premier titre</dt>
-        <dd>définition du premier titre</dd>
-        <dt>Second titre</dt>
-        <dd>définition du second titre</dd>
-        <dt>Troisième titre</dt>
-        <dd>définition du troisième titre</dd>
-    </dl>
-
-    <h2 id="link">Les liens</h2>
-
-    <a href="http://google.com">vers google</a><br>
-    <a href="http://google.com" target="_blank">vers google dans un nouvel onglet</a><br>
-    <a href="dossier/navigation.html">vers une autre partie du site (navigation)</a><br>
-    <a href="#demo" title="lien vers le de la page">home (avec title)</a><br>
-    <a href="ressources/Html & CSS (Bstorm).pdf" title="Html & CSS (Bstorm).pdf">lien vers pdf</a><br>
-    <a href="ressources/toDownload.rar" title="toDownload.rar">telechargement</a>
+    <footer>
+        <p>cours donné par Alexandre Kimtsaris</p>
+    </footer>
 
 </body>
 </html>
