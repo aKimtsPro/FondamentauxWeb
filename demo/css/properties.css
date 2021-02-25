@@ -1,0 +1,85 @@
+
+/* LES PROPRIETES CONCERNANT LES TEXTES */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap'); -> Import un fichier css pour en rajouter le code*/
+@font-face{ /* ajoute une font-family custom */
+    font-family: 'Open Sans';
+    src: url(../../ressources/fonts/OpenSans.woff2) format("woff2");
+}
+
+body {
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    font-family: 'Open Sans'/*, 'Segoe UI', sans-serif;*/
+}
+
+header, footer{
+    background-color: cadetblue;
+}
+
+nav {
+    border-bottom: 5px solid rgb(82, 113, 114);
+}
+
+h2{
+    text-decoration: underline; /* 2px solid inherit */
+}
+
+#text{
+    font-size: 16px;
+    text-align: justify;
+
+    /* overflow gère l'affichage des éléments qui sortent du cadre */
+    height: 100px;
+    width: 100%;
+    overflow: scroll; 
+    overflow-wrap: break-word;
+}
+
+#text_1{
+    font-size: 20px; /* absolue */
+    /* font-size: 50%;  -> relatif au parent */
+    /* font-size: 0.5em; -> relatif au parent */
+    /* font-size: 1.5rem; -> relatif à la balise html */
+}
+
+#text_2{
+    font-weight: bold;
+    font-style: italic;
+    /* font-style: oblique 80deg; */
+}
+
+#text_3{
+    text-transform: capitalize; /* modifie les majuscule d'un texte */
+}
+
+
+/* LES COULEURS ET BG */
+
+#color-1{
+    /* color: teal; */
+    /* color: rgb(64, 104, 138);   nombre entre 0 et 255 -> 256 valeurs -> un octet(8bit) */
+                                /* binaire : 0->1 | decimal : 0->9 | hexa : 0,...,9, A, B, C, D, E, F */
+                                /* rouge: FF -> 256 valeurs, vert: FF, bleu: FF */
+    /* color: #40688A; */
+    color: #457;
+}
+
+section, nav{
+    /* background-color: rgba(219, 219, 219, 0.7); */
+    background-color: #dbdbdbb4;
+}
+
+body {
+    background-image: url("../../ressources/img/pexels-ethan-jones-3222371.jpg");
+    background-position: left 400px top 20px;
+    background-repeat: repeat;
+    background-attachment: fixed; /* determine si le bg scroll avec le site ou reste en place */
+    /* background: url("../../ressources/img/pexels-ethan-jones-3222371.jpg")  left 400px top 20px no-repeat fixed,
+                url("../../ressources/img/pexels-kira-schwarz-6898885.jpg")  left 400px top 20px repeat fixed; */
+}
+
+
+
+footer{
+    opacity: 0.8;
+}

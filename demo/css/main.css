@@ -53,3 +53,62 @@ header {
 h2, h3, h4, h5, div > h6 + p {
     text-decoration: underline;
 }
+
+
+/* Les pseudo-classes */
+
+/* relation parent-enfant */
+
+/* Qui est premier enfant */
+/* :first-child{
+    border: 5px dashed deeppink;
+} */
+
+
+/* Qui est dernier enfant */
+/* :last-child{
+    border: 5px dashed deeppink;
+} */
+
+/* Qui est seul enfant */
+/* :only-child{
+    border: 5px dashed deeppink;
+} */
+
+/* Permet de récupérer un/des enfant(s) particuliers sont une formule An+B */
+li:nth-child(2n+1){ /* 0, 4, 8,...  ->  2, 6, 10,...*/
+    background-color: rgb(167, 24, 185);
+}
+
+/* balise orpheline et balise en pair vide(d'élément et de texte) */
+/* :empty{
+    border: 5px dashed deeppink;
+} */
+
+/* Les elements qui ne sont pas selectionné par le selecteur en paramètre */
+/* :not(h1,h2,h3,h4,h5,h6){
+    border: 5px dashed deeppink;
+} */
+
+/* Les div qui sont les seuls de ce type dans leur 'voisinage' */
+/* div:only-of-type{
+    border: 5px dashed deeppink;
+} */
+
+/* div:first-of-type{
+    border: 5px dashed deeppink;
+} */
+
+/* div:last-of-type{
+    border: 5px dashed deeppink;
+} */
+
+/* récupère un element de class 'classed-link' qui est aussi un premier enfant */
+.nav-item:first-child {
+    background-color: blue;
+}
+
+/* récupère le dernier enfant direct */
+#nav-list > :last-child{
+    background-color: red;
+}
