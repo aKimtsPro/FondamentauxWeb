@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo HTML/CSS - Les forms</title>
+    <link rel="stylesheet" href="css/properties.css">
+    <link rel="stylesheet" href="css/form.css">
+    <style>
+
+        input:invalid{
+            border: 2px solid red;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 id="demo">Demo HTML/CSS</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">vers index</a></li>
+            <li><a href="navigation.html">vers navigation</a></li>
+            <li><a href="css_properties.html">vers css</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Les inputs</h2>
+            <form action="#" method="POST">
+                <label for="input-nom">Nom (text) : </label>
+                <input type="text" name="nom" id="input-nom" placeholder="placeholders"><br> <!--value="valeur de base"-->
+                <label for="input-taille">Taille (number) :</label>
+                <input type="number" name="taille" id="input-taille" placeholder="en centimètre"><br>
+                <label for="input-email">Email (email) : </label>
+                <input type="email" name="email" id="input-email"><br>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>cours donné par Alexandre Kimtsaris</p>
+    </footer>
+    
+</body>
+</html>

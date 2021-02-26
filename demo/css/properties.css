@@ -64,9 +64,15 @@ h2{
     color: #457;
 }
 
+
+footer{
+    opacity: 0.8;
+}
+
 section, nav{
     /* background-color: rgba(219, 219, 219, 0.7); */
     background-color: #dbdbdbb4;
+    /* background-color: #DDDB; */
 }
 
 body {
@@ -79,7 +85,98 @@ body {
 }
 
 
+nav{
+    width: 50%;
+    height: 100px;
+    overflow: scroll;
+}
+
+#test
+{
+    background-color: yellow;
+    width: 50%;
+}
+
+/* h2, p {
+    display: flex;
+    justify-content: space-evenly;
+} */
+
+span{
+    width: 20%;
+}
+
+#conteneur{
+    /* display: flex; */
+}
+
+.contenu{
+    float: right;
+    width: 100px;
+    height: 100px;
+    background-color: cyan;
+    border: 2px solid black;
+}
+
+.clearer{
+    clear: both;
+}
+
+.contenu > span{
+    vertical-align: bottom 20px;
+}
+
+
+/* margin et padding */
+
+section {
+    padding: 20px;
+    margin: 20px;
+    border: 2px solid black;
+    border-radius: 0 10px;
+}
+
+section:hover {
+    box-shadow: 0px 0px 20px 0px rgba(166, 200, 219, 0.63);
+}
+
+section:active {
+    box-shadow: 0px 0px 20px 0px rgba(40, 131, 184, 0.89);
+}
+
+section > h2 {
+    margin-top: 0;
+}
+
+nav {
+    margin-left: 4%;
+}
 
 footer{
-    opacity: 0.8;
+    padding: 10px 0 10px 30px;
+}
+
+footer>p{
+    margin: 0;
+}
+
+#conteneur{
+    background-color: rgb(209, 219, 224);
+    border: 5px solid teal;
+    border-radius: 8px;
+
+    /* border-width: 5px 5px 10px 5px;
+    border-style: solid solid dashed solid;
+    border-color: teal red green yellow; */
+
+    padding: 10px 20px;
+}
+
+h2 {
+    text-shadow: 2px 2px 4px teal;
+}
+
+
+a:visited {
+    color: tomato;
 }
